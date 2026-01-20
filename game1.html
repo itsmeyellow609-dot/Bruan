@@ -1,0 +1,58 @@
+a<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Klik Poin</title>
+<style>
+  body {
+    font-family: Arial;
+    text-align: center;
+    padding-top: 50px;
+    background: #222;
+    color: white;
+  }
+  #button {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #button:hover {
+    background: yellow;
+    color: black;
+  }
+  #score {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Game Klik Poin</h1>
+<button id="button">Klik Aku!</button>
+<div id="score">Skor: 0</div>
+
+<script>
+let score = 0;
+const button = document.getElementById("button");
+const scoreDisplay = document.getElementById("score");
+
+button.addEventListener("click", () => {
+  score++;
+  scoreDisplay.textContent = "Skor: " + score;
+
+  // Gerak tombol ke posisi random
+  const x = Math.random() * (window.innerWidth - button.offsetWidth);
+  const y = Math.random() * (window.innerHeight - button.offsetHeight);
+  button.style.position = "absolute";
+  button.style.left = x + "px";
+  button.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>
