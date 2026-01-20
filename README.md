@@ -1,0 +1,2 @@
+# Bruan
+Aku tahu shbehdbrhfbdhgdhshshshdydhshduhrf nidnfibi fw idbuscjkd kdncnkbekfbssnfbfkenkshcndk, kcbkrbvkdnvvvghhhh
